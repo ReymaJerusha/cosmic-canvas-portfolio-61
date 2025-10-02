@@ -50,8 +50,7 @@ const Hero = () => {
                 className="space-y-4"
               >
                 <p className="text-foreground/80 leading-relaxed">
-                  Passionate about building innovative solutions with cutting-edge technologies.
-                  Specialized in React, Node.js, and modern web development frameworks.
+                  I am an AI/ML Engineer and Data Analyst passionate about transforming data into actionable insights and building intelligent solutions. With hands-on experience in machine learning, deep learning, and statistical modeling, I develop predictive models and data-driven applications that solve real-world problems. Skilled in Python, SQL, Power BI, and cloud-based analytics, I specialize in data preprocessing, feature engineering, model development, and visualization to enable informed decision-making. My work bridges the gap between complex data and strategic business outcomes, delivering scalable and efficient AI solutions.
                 </p>
                 
                 <div className="flex flex-wrap gap-4 pt-4">
