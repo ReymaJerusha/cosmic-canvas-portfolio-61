@@ -40,7 +40,7 @@ const Hero = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-xl md:text-2xl text-muted-foreground"
               >
-                Full Stack Developer | AI Enthusiast | Problem Solver
+                Data Analyst & AI/ML Engineer
               </motion.p>
 
               <motion.div
