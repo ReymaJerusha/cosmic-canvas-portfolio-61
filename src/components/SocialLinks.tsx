@@ -1,13 +1,11 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Instagram, Youtube, Twitter } from "lucide-react";
+import { Github, Linkedin, Instagram } from "lucide-react";
 
 export const SocialLinks = () => {
   const socials = [
     { icon: Github, href: "#", label: "GitHub", color: "hover:text-foreground" },
     { icon: Linkedin, href: "#", label: "LinkedIn", color: "hover:text-primary" },
     { icon: Instagram, href: "#", label: "Instagram", color: "hover:text-accent" },
-    { icon: Youtube, href: "#", label: "YouTube", color: "hover:text-destructive" },
-    { icon: Twitter, href: "#", label: "Twitter", color: "hover:text-primary" },
   ];
 
   return (
