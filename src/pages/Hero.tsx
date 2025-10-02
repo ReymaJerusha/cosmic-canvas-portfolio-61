@@ -30,7 +30,7 @@ const Hero = () => {
                     Hi, I'm
                   </span>
                   <br />
-                  <span className="text-foreground">Your Name</span>
+                  <span className="text-foreground">Reyma Jerusha M</span>
                 </h1>
               </motion.div>
 
