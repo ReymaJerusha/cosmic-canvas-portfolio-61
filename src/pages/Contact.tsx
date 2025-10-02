@@ -36,19 +36,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "your.email@example.com",
-      href: "mailto:your.email@example.com",
+      value: "reymajerushamansingh2001@gmail.com",
+      href: "mailto:reymajerushamansingh2001@gmail.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "+91 7598933203",
+      href: "tel:+917598933203",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Kochi, India",
       href: "#",
     },
   ];
