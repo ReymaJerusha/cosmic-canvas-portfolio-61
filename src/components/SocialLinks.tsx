@@ -3,9 +3,9 @@ import { Github, Linkedin, Instagram } from "lucide-react";
 
 export const SocialLinks = () => {
   const socials = [
-    { icon: Github, href: "#", label: "GitHub", color: "hover:text-foreground" },
-    { icon: Linkedin, href: "#", label: "LinkedIn", color: "hover:text-primary" },
-    { icon: Instagram, href: "#", label: "Instagram", color: "hover:text-accent" },
+    { icon: Github, href: "https://github.com/ReymaJerusha", label: "GitHub", color: "hover:text-foreground" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/reyma-jerusha/", label: "LinkedIn", color: "hover:text-primary" },
+    { icon: Instagram, href: "https://www.instagram.com/reyma_jerusha/", label: "Instagram", color: "hover:text-accent" },
   ];
 
   return (
