@@ -1,74 +1,65 @@
 import { motion } from "framer-motion";
 import { PageTransition } from "@/components/PageTransition";
 import { ParticlesBackground } from "@/components/ParticlesBackground";
-import { Code2, Database, Cloud, Palette, Zap, Globe } from "lucide-react";
+import { Code2, Database, Brain, BarChart3, Zap } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend Development",
+      title: "Programming & Tools",
       icon: Code2,
       color: "text-primary",
       skills: [
-        { name: "React.js", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "Tailwind CSS", level: 92 },
-        { name: "Next.js", level: 88 },
+        { name: "Python", level: 95 },
+        { name: "SQL", level: 90 },
+        { name: "Git", level: 88 },
+        { name: "Jupyter", level: 92 },
+        { name: "VS Code", level: 90 },
       ],
     },
     {
-      title: "Backend Development",
+      title: "Data Analysis",
+      icon: BarChart3,
+      color: "text-secondary",
+      skills: [
+        { name: "Data Cleaning", level: 93 },
+        { name: "Exploratory Data Analysis", level: 90 },
+        { name: "Statistical Analysis", level: 88 },
+        { name: "Data Visualization", level: 92 },
+        { name: "Reporting", level: 90 },
+      ],
+    },
+    {
+      title: "Machine Learning",
+      icon: Brain,
+      color: "text-accent",
+      skills: [
+        { name: "Supervised Learning", level: 90 },
+        { name: "Unsupervised Learning", level: 85 },
+        { name: "Model Development", level: 88 },
+        { name: "Hyperparameter Tuning", level: 86 },
+        { name: "Model Evaluation", level: 90 },
+      ],
+    },
+    {
+      title: "Deep Learning & NLP",
+      icon: Zap,
+      color: "text-primary",
+      skills: [
+        { name: "Neural Networks", level: 85 },
+        { name: "TensorFlow", level: 88 },
+        { name: "PyTorch", level: 82 },
+        { name: "NLP", level: 87 },
+      ],
+    },
+    {
+      title: "Databases & BI Tools",
       icon: Database,
       color: "text-secondary",
       skills: [
-        { name: "Node.js", level: 90 },
-        { name: "Python", level: 85 },
-        { name: "PostgreSQL", level: 88 },
-        { name: "MongoDB", level: 86 },
-      ],
-    },
-    {
-      title: "Cloud & DevOps",
-      icon: Cloud,
-      color: "text-accent",
-      skills: [
-        { name: "AWS", level: 82 },
-        { name: "Docker", level: 88 },
-        { name: "Kubernetes", level: 75 },
-        { name: "CI/CD", level: 85 },
-      ],
-    },
-    {
-      title: "UI/UX Design",
-      icon: Palette,
-      color: "text-primary",
-      skills: [
-        { name: "Figma", level: 90 },
-        { name: "Adobe XD", level: 85 },
-        { name: "Framer", level: 88 },
-        { name: "Design Systems", level: 92 },
-      ],
-    },
-    {
-      title: "Performance",
-      icon: Zap,
-      color: "text-secondary",
-      skills: [
-        { name: "Optimization", level: 90 },
-        { name: "Web Vitals", level: 88 },
-        { name: "Lighthouse", level: 92 },
-        { name: "Caching", level: 85 },
-      ],
-    },
-    {
-      title: "Web Technologies",
-      icon: Globe,
-      color: "text-accent",
-      skills: [
-        { name: "WebRTC", level: 80 },
-        { name: "WebSockets", level: 88 },
-        { name: "GraphQL", level: 85 },
-        { name: "REST APIs", level: 95 },
+        { name: "MySQL", level: 92 },
+        { name: "Power BI", level: 90 },
+        { name: "Tableau", level: 88 },
       ],
     },
   ];
@@ -153,14 +144,14 @@ const Skills = () => {
             <h3 className="text-2xl font-bold mb-6 text-foreground">Additional Expertise</h3>
             <div className="flex flex-wrap gap-3 justify-center max-w-4xl mx-auto">
               {[
-                "Agile/Scrum",
-                "Git/GitHub",
-                "Testing (Jest, Cypress)",
-                "SEO Optimization",
-                "Mobile Development",
-                "Web Security",
-                "Accessibility (WCAG)",
-                "Analytics",
+                "Scikit-learn",
+                "Pandas",
+                "NumPy",
+                "Matplotlib",
+                "Seaborn",
+                "Feature Engineering",
+                "Data Preprocessing",
+                "A/B Testing",
               ].map((skill, index) => (
                 <motion.span
                   key={skill}

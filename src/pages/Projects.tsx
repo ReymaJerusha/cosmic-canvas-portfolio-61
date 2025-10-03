@@ -1,52 +1,36 @@
 import { motion } from "framer-motion";
 import { PageTransition } from "@/components/PageTransition";
 import { ParticlesBackground } from "@/components/ParticlesBackground";
-import { ExternalLink, Github } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const Projects = () => {
   const projects = [
     {
-      title: "AI-Powered Analytics Platform",
-      description: "A comprehensive analytics dashboard with machine learning predictions and real-time data visualization.",
-      tech: ["React", "Python", "TensorFlow", "PostgreSQL"],
-      image: "🤖",
+      title: "Mental Health Prediction using ML",
+      description: "Built a machine learning model to analyze survey data and predict mental health conditions. Applied data preprocessing, feature engineering, and classification algorithms to improve prediction accuracy.",
+      tech: ["Python", "Scikit-learn", "Pandas", "Machine Learning"],
+      image: "🧠",
       gradient: "from-primary to-secondary",
     },
     {
-      title: "E-Commerce Marketplace",
-      description: "Full-stack marketplace with payment integration, inventory management, and admin dashboard.",
-      tech: ["Next.js", "Node.js", "Stripe", "MongoDB"],
-      image: "🛍️",
+      title: "Stock Price Notifier",
+      description: "Built an automated notifier that monitors stock prices and sends real-time alerts (email/SMS) based on user-defined thresholds using Python and APIs.",
+      tech: ["Python", "APIs", "Email/SMS Integration"],
+      image: "📈",
       gradient: "from-secondary to-accent",
     },
     {
-      title: "Real-Time Chat Application",
-      description: "Scalable chat platform with video calling, file sharing, and end-to-end encryption.",
-      tech: ["React", "WebRTC", "Socket.io", "Redis"],
-      image: "💬",
+      title: "Recruitment & Selection Process using NLP",
+      description: "Developed an NLP-based system to screen resumes and match candidates with job descriptions. Implemented text preprocessing, keyword extraction, and similarity measures to automate candidate shortlisting.",
+      tech: ["Python", "NLP", "Text Processing", "Machine Learning"],
+      image: "📄",
       gradient: "from-accent to-primary",
     },
     {
-      title: "Project Management Tool",
-      description: "Collaborative workspace with kanban boards, time tracking, and team analytics.",
-      tech: ["Vue.js", "Express", "GraphQL", "PostgreSQL"],
-      image: "📊",
+      title: "Retail Store Management System",
+      description: "Designed a Python and SQL-based application to manage inventory, sales, billing, and customer records, improving store operations and data handling efficiency.",
+      tech: ["Python", "SQL", "Database Management"],
+      image: "🛒",
       gradient: "from-primary to-accent",
-    },
-    {
-      title: "IoT Smart Home System",
-      description: "Connected home automation system with mobile app and voice control integration.",
-      tech: ["React Native", "MQTT", "AWS IoT", "Firebase"],
-      image: "🏠",
-      gradient: "from-secondary to-primary",
-    },
-    {
-      title: "Blockchain Wallet",
-      description: "Secure cryptocurrency wallet with multi-chain support and DeFi integration.",
-      tech: ["React", "Web3.js", "Solidity", "Ethereum"],
-      image: "💰",
-      gradient: "from-accent to-secondary",
     },
   ];
 
@@ -99,7 +83,7 @@ const Projects = () => {
                     <h3 className="text-xl font-bold mb-2 text-foreground">{project.title}</h3>
                     <p className="text-muted-foreground mb-4 flex-1">{project.description}</p>
                     
-                    <div className="flex flex-wrap gap-2 mb-4">
+                    <div className="flex flex-wrap gap-2">
                       {project.tech.map((tech) => (
                         <span
                           key={tech}
@@ -108,24 +92,6 @@ const Projects = () => {
                           {tech}
                         </span>
                       ))}
-                    </div>
-                    
-                    <div className="flex gap-3">
-                      <Button
-                        size="sm"
-                        variant="outline"
-                        className="flex-1 border-primary/30 hover:bg-primary/10"
-                      >
-                        <Github className="mr-2" size={16} />
-                        Code
-                      </Button>
-                      <Button
-                        size="sm"
-                        className="flex-1 bg-primary/20 hover:bg-primary/30"
-                      >
-                        <ExternalLink className="mr-2" size={16} />
-                        Demo
-                      </Button>
                     </div>
                   </div>
                 </div>

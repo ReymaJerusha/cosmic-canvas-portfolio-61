@@ -51,9 +51,9 @@ const Resume = () => {
                   <h2 className="text-2xl font-bold text-foreground">Education</h2>
                 </div>
                 <div className="space-y-3 text-muted-foreground">
-                  <p>• Bachelor of Technology in Computer Science</p>
-                  <p>• University Name, 2018-2022</p>
-                  <p>• GPA: 3.8/4.0</p>
+                  <p>• B.E in Computer Science and Engineering</p>
+                  <p>• Anna University, 2019-2023</p>
+                  <p>• CGPA: 9.1/10</p>
                 </div>
               </div>
 
@@ -63,37 +63,39 @@ const Resume = () => {
                   <Briefcase className="text-secondary" size={24} />
                   <h2 className="text-2xl font-bold text-foreground">Experience</h2>
                 </div>
-                <div className="space-y-3 text-muted-foreground">
-                  <p>• Senior Full Stack Developer at Tech Corp (2022-Present)</p>
-                  <p>• Frontend Developer at StartupXYZ (2020-2022)</p>
-                  <p>• Intern at Innovation Labs (2019-2020)</p>
+                <div className="space-y-4 text-muted-foreground">
+                  <div>
+                    <p className="font-semibold text-foreground">AI/ML Intern</p>
+                    <p className="text-sm">Luminor Technolab | Apr 2025 – Present</p>
+                    <ul className="mt-2 space-y-1 list-disc list-inside">
+                      <li>Assisted in building and optimizing ML models using Python, Scikit-learn, and TensorFlow</li>
+                      <li>Performed data preprocessing, EDA, and feature engineering to improve model performance</li>
+                      <li>Contributed to real-world AI projects and reported insights through visualizations</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
 
-              {/* Key Skills */}
+              {/* Projects */}
               <div>
-                <h2 className="text-2xl font-bold mb-4 text-foreground">Key Skills</h2>
-                <div className="flex flex-wrap gap-3">
-                  {[
-                    "React.js",
-                    "Node.js",
-                    "TypeScript",
-                    "Python",
-                    "AWS",
-                    "Docker",
-                    "MongoDB",
-                    "PostgreSQL",
-                  ].map((skill, index) => (
-                    <motion.span
-                      key={skill}
-                      initial={{ opacity: 0, scale: 0 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{ delay: 0.4 + index * 0.1 }}
-                      className="px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary text-sm font-medium"
-                    >
-                      {skill}
-                    </motion.span>
-                  ))}
+                <h2 className="text-2xl font-bold mb-4 text-foreground">Projects</h2>
+                <div className="space-y-4 text-muted-foreground">
+                  <div>
+                    <p className="font-semibold text-foreground">Mental Health Prediction using ML</p>
+                    <p className="text-sm">Built a machine learning model to analyze survey data and predict mental health conditions. Applied data preprocessing, feature engineering, and classification algorithms to improve prediction accuracy.</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Stock Price Notifier (Python)</p>
+                    <p className="text-sm">Built an automated notifier that monitors stock prices and sends real-time alerts (email/SMS) based on user-defined thresholds using Python and APIs.</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Recruitment & Selection Process using NLP</p>
+                    <p className="text-sm">Developed an NLP-based system to screen resumes and match candidates with job descriptions. Implemented text preprocessing, keyword extraction, and similarity measures to automate candidate shortlisting.</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Retail Store Management System</p>
+                    <p className="text-sm">Designed a Python and SQL-based application to manage inventory, sales, billing, and customer records, improving store operations and data handling efficiency.</p>
+                  </div>
                 </div>
               </div>
             </div>
